@@ -2,9 +2,7 @@ require('./bootstrap');
 window.Vue = require('vue')
 
 
-
-
-Vue.component('mainapp', require('./components/mainapp.vue').default)
+Vue.component('search', require('./components/search.vue').default)
 const app = new Vue({
-    el: '#app', 
+    el: '#app',  
 })

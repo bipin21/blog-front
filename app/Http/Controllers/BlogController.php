@@ -91,7 +91,12 @@ class BlogController extends Controller
                 $q->where('tagName',$str);
             });
         });
-        return $blogs->get();
+        $blogs = $blogs->paginate(1);
+        $blogs->appends($request->all());
+        $data = [
+            'blogs' => $blogs,
+        ];
+        return view('blogs')->with($data);
 
         // if(!$str) return $blogs->get();
         // $blogs->where('title','LIKE',"%{$str}%")
