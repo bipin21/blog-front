@@ -40,7 +40,7 @@
     </div>
 </div>
 <div class="footer_copy_right">
-    <p>©2019 Appifylab. All rights reserved</p>
+    <p>©2019 BP Tech. All rights reserved</p>
 </div>
 <!-- FOOTER -->
 
