@@ -135,7 +135,8 @@ export default {
     async created(){
         const res = this.callApi('get','https://jsonplaceholder.typicode.com/todos/1')
         if(res.status == 200){
-            console.log(res.data)
+            console.log(res.data);
+            
         }
     }
 }
